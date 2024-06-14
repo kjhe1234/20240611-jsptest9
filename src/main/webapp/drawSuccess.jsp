@@ -4,23 +4,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인 화면</title>
+<title>회원 탈퇴 성공</title>
 </head>
 <body>
-	<img src="img/jsp.jpg" width="700"><br><br>
-	<center>
+	<h2>회원 탈퇴 성공</h2>
+	<hr>
+	그동안 감사했습니다<br><br>.
 	<table border="0">
 		<tr>
 			<td>
-				<form action="Login.jsp">
-					<input type="submit" value="◀ 관리자 접속하기">
+				<form action="main.jsp">
+					<input type="submit" value="◀ 메인 화면으로">
 				
 				</form>
 			
 			</td>
 			<td>
 				<form action="signup.jsp">
-					<input type="submit" value="사용자 접속하기 ▶">
+					<input type="submit" value="다시 가입하기 ▶">
 				
 				</form>
 			
@@ -28,12 +29,6 @@
 	
 		</tr>
 	</table>
-	</center>
-
-
-
-
-
 
 </body>
 </html>
