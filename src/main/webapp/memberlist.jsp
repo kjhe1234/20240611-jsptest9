@@ -8,11 +8,17 @@
 <title>회원 리스트</title>
 </head>
 <body>
+	<%
+		if(session.getAttribute("adminID")== null  || !(session.getAttribute("adminID").equals("space"))) {
+			response.sendRedirect("Login.jsp");
+		}
+	
+	%>
 	<h2>회원 리스트</h2>
 	<hr>
 	회원번호 / 아이디 / 이메일 / 가입일시<br>
 	<%
-		String sql = "SELECT id, email, signuptime FROM members";
+	String sql = "SELECT id, email, signuptime FROM members";
 	
 	String driverName = "com.mysql.jdbc.Driver";
 	String url = "jdbc:mysql://localhost:3306/jsp_projectdb";

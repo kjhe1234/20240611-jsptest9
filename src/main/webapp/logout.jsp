@@ -9,16 +9,13 @@
 <title>로그 아웃</title>
 </head>
 <body>
-<h2>로그 아웃</h2>
+<h2>관리자 로그 아웃</h2>
 <hr>
 <%
 
-
-
 	    // 세션이 존재하는 경우에만 세션 속성을 삭제하여 로그아웃합니다.
 	    if(session != null) {
-	        session.removeAttribute("adminID"); // adminID 세션 속성 제거
-	        session.invalidate(); // 세션 무효화
+	        session.invalidate() ; // 세션 삭제 -> 로그아웃
 	    }
 	
 %>
