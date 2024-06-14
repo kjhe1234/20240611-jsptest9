@@ -15,9 +15,13 @@
 		비밀번호 : <input type="password" name="userPW" size="16"><br><br>
 		이메일 : <input type="text" name="userEmail" size="30"><br><br>
 		<input type="reset" value="◀ 다시작성">
-		<input type="submit" value="가입하기 ▶">
+		<input type="submit" value="가입하기 ▶"><br><br>
 	</form>
-
+	
+	<form action="main.jsp">
+			<input type="submit" value="메인 화면으로 이동 ▶">
+				
+	</form>
 
 </body>
 </html>
